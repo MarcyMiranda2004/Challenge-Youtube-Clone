@@ -1,0 +1,170 @@
+body {
+    /*con questa struttura nel body andiamo a creare quella che sarà la sidebar del sito.*/
+    display: flex;
+    margin: 0%;
+    height: 100vh;
+    background-color: rgb(228, 209, 238);                                             
+}
+
+/* Side Bar */
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(232, 202, 248);
+    font-family: 'Lodeh', sans-serif;
+}
+
+.sidebar-icon{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.sidebar-icon p  {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.sidebar-icon img {
+    cursor: pointer;
+}
+
+/* Main Content */
+#main {
+    width: 100%;
+}
+
+/* Topbar */
+#topbar {
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    flex-flow: wrap;
+    justify-content: space-between;
+    background-color: rgb(232, 202, 248);
+}
+
+#topbar-icons {
+    display: flex;
+    margin-right: 14%;
+    width: 20px;
+}
+
+.topbar-icons {
+    padding: 150%;
+    padding-right: 185%;
+}
+
+.topbar-icons img {
+    cursor: pointer;
+}
+
+/* Logo */
+#logo{
+    height: 105%;
+}
+
+/* Barra Di Ricerca */
+#search-wrapper {
+    display: flex;
+    height: 30%;
+    align-items: center;
+}
+
+#search-camp {
+    height: 45px;
+    width: 500px; 
+    padding: 13px; 
+    font-size: 15px; 
+    border: 2px solid #ccc; 
+    border-bottom-left-radius: 8px; 
+    border-top-left-radius: 8px; 
+    box-sizing: border-box;     
+}
+
+#search-btn {
+    display: flex;
+    height: 45px;
+    padding: 0 1.2em;
+    align-items: center;
+    cursor: pointer; 
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 2px solid #ccc;
+}
+
+#mic-btn {
+    display: flex;
+    cursor: pointer;
+    border-radius: 60%;
+    height: 45px;
+    width: 50px;
+    margin-left: 5%;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ccc;
+}
+
+/* Content Della Pagina */
+#content {
+    height: 100%;
+    display: flex;
+}
+
+#image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.video-card {
+    padding: 10px;
+}
+
+.video-card img {
+    height: 60%;
+    width: 85%;
+    cursor: pointer;
+}
+
+#video-info {
+    display: flex;
+    align-items: flex-start; 
+}
+
+.video-info {
+    display: flex; 
+    align-items: flex-start; /* Allinea gli elementi in alto a sinistra */
+    padding: 10px; /* Aggiunge un po' di spazio intorno agli elementi */
+    font-family: 'Eagle Lake'; font-size: small;
+}
+
+.video-info img {
+    width: 40px; 
+    height: 40px; 
+    margin-right: 10px; /* Spazio tra l'immagine e il testo */
+}
+
+.video-info div {
+    flex: 1; /* Permette al testo di occupare lo spazio rimanente */
+}
+
+.video-info h3 {
+    margin: 0 0 5px; /* Margini per il titolo */
+    font-size: 1.5em;
+    white-space: nowrap; /* Impedisce al titolo di andare a capo */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Aggiunge i puntini di sospensione se il testo è troppo lungo */
+}
+
+.video-info p {
+    margin: 0; /* Rimuove i margini predefiniti del paragrafo */
+    font-size: 1em;
+    color: #666; /* Testo un po' più scuro per la descrizione */
+}
+/*By Marcello Miranda*/
